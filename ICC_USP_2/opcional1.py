@@ -27,7 +27,21 @@ imprime_matriz(minha_matriz)
 """
 
 def imprime_matriz(matriz):
-    linha = []
+    saida = ""
+    temp = ""
     for i in matriz:
-        
+        linha = ""
+        for j in i:
+            linha += str(j) +" "
+        temp += linha
+    saida = temp.rstrip()
+    print(saida)
+
+
+
+minha_matriz = [[1, 2, 3], [4, 5, 6]]
+imprime_matriz(minha_matriz)
+
+
+
 
