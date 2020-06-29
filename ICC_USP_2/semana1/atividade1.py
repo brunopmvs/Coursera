@@ -7,8 +7,7 @@ minha_matriz = [[1], [2], [3]]
 dimensoes(minha_matriz)
 3X1
 
-minha_matriz = [[1, 2, 3], [4, 5, 6]]
-dimensoes(minha_matriz)
+C
 2X3
 """
 
