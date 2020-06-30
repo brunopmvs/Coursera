@@ -1,28 +1,12 @@
 """
-Duas matrizes são multiplicáveis se o número de colunas da primeira é igual ao
- número de linhas da segunda. Escreva a função sao_multiplicaveis(m1, m2) que 
- recebe duas matrizes como parâmetro e devolve True se as matrizes forem multiplicavéis 
- (na ordem dada) e False caso contrário.
-
-m1 = [[1, 2, 3], [4, 5, 6]]
-m2 = [[2, 3, 4], [5, 6, 7]]
-sao_multiplicaveis(m1, m2) => False
-
-m1 = [[1], [2], [3]]
-m2 = [[1, 2, 3]]
-sao_multiplicaveis(m1, m2) => True
-
-Testes:
-m1 = [[1, 2, 3], [4, 5, 6]]
-m2 = [[2, 3, 4], [5, 6, 7]]
-print(sao_multiplicaveis(m1, m2))
-
-
-m1 = [[1], [2], [3]]
-m2 = [[1, 2, 3]]
-print(sao_multiplicaveis(m1, m2))
-
+Multiplica matrizes
 """
+# def criaMatriz(iParam,jParam, valor = 0):
+#     for i in range(iParam, jParam):
+#         linha = []
+#         for j in range(jParam):
+#             linha.append()
+
 
 
 def sao_multiplicaveis(m1, m2):
@@ -65,16 +49,28 @@ def sao_multiplicaveis(m1, m2):
     else:
         return False
 
+def multiplicaMatrizes(m1, m2):
+
+    result = []
+    i_m1 = len(m1)
+    j_m1 = len(m1[0])
+    i_m2 = len(m2)
+    j_m2 = len(m2[0])
+    for i in range(i_m1):
+        linha = []
+        for j in range(j_m2):
+            linha.append(m1[i][j] * m2[j][i])
+            print(m1[i][j] * m2[j][i])
+        result.append(linha)
+
+    
 
 
-m1 = [1]
-m2 = [1,3,3]
-print(sao_multiplicaveis(m1,m2))
-
+    print(result)
 
 
 
 m1 = [[2,5,9],[3,6,8]]
 m2 = [ [2,7],[4,3],[5,2] ]
 
-print(sao_multiplicaveis(m1, m2 ))
+multiplicaMatrizes(m1, m2)

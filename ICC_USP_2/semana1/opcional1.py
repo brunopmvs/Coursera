@@ -32,7 +32,6 @@ def imprime_matriz(matriz):
     i = 0
     j = 0
     linha = ""
-    res = ""
 
     while(i < i_matriz):
         j = 0

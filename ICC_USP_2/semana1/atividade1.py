@@ -31,3 +31,9 @@ def dimensoes(matriz):
         for z in x:
             j += 1
     print(str(i) + "X" + (str(j)))
+
+m1 = [[2,5,9],[3,6,8]]
+m2 = [ [2,7],[4,3],[5,2] ]
+
+print(dimensoes(m1))
+print(dimensoes(m2))
